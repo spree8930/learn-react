@@ -1,12 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './index.css'
+import './index.scss'
+import Info from './components/Info';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
-        <div>
-            Hello World
-       </div>
+        <>
+            <Info />
+            <Content />
+            <Footer />
+        </>    
     )
 }
 
