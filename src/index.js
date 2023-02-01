@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.scss'
+import Header from "./components/Header";
+import Meme from "./components/Meme";
 
 const App = () => {
     return (
         <div>
-            Hello World
+            <Header />
+            <Meme />
        </div>
     )
 }
