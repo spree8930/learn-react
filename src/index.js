@@ -16,9 +16,8 @@ const App = () => {
     const squareItems = squares.map(square => (
         <Box 
             key={square.id}
-            id={square.id}
             on={square.on}
-            callback={toggle}></Box>
+            callback={() => toggle (square.id)}></Box>
     ))
     return (
         <main>

@@ -6,6 +6,6 @@ export default function Box(props) {
     }
 
     return (
-        <div className="square" style={styles} onClick={() => props.callback(props.id)}></div>
+        <div className="square" style={styles} onClick={props.callback}></div>
     )
 }
