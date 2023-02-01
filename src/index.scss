@@ -1,4 +1,7 @@
-$bg-color: #d7f0f3;
-body {
-    background: $bg-color;
+.square {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000;
+    margin: 2px;
+    display: inline-block;
 }
