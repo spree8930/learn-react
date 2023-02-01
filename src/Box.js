@@ -1,15 +1,11 @@
 import React from "react"
 
 export default function Box(props) {
-    const [isOn, setIsOn] = React.useState(props.on);
     const styles = {
-        backgroundColor: isOn ? "#222222" : "transparent"
-    }
-    function toggleIsOn() {
-        setIsOn(prevState => !prevState);
+        backgroundColor: props.on ? "#222222" : "transparent"
     }
 
     return (
-        <div className="square" style={styles} onClick={toggleIsOn}></div>
+        <div className="square" style={styles} onClick={() => props.callback(props.id)}></div>
     )
 }
