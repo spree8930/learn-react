@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.scss'
 import boxes from "./boxes";
+import Box from "./Box"
 
 const App = () => {
     const [squares, setSquares] = React.useState(boxes);
     const squareItems = squares.map(square => (
-        <div className="square" key={square.id}></div>
+        <Box key={square.id} on={square.on}></Box>
     ))
     return (
         <main>
