@@ -18,11 +18,13 @@ export default function Form() {
             [name]: type === "checkbox" ? checked: value
         }));
     }
-
-    console.log(formData)
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(formData)
+    }
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <input type="text" name="firstName" placeholder="First Name" onChange={handleChange} value={formData.firstName} />
             <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} value={formData.lastName} />
             <input type="email" name="email" placeholder="Email" onChange={handleChange} value={formData.email} />
@@ -79,6 +81,7 @@ export default function Form() {
                 <option value="indigo">Indigo</option>
                 <option value="violet">Violet</option>
             </select>
+            <button>Submit</button>
         </form>
     );
 }
