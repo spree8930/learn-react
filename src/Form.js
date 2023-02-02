@@ -16,9 +16,9 @@ export default function Form() {
 
     return (
         <form>
-            <input type="text" name="firstName" placeholder="First Name" onChange={handleChange}></input>
-            <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange}></input>
-            <input type="email" name="email" placeholder="Email" onChange={handleChange}></input>
+            <input type="text" name="firstName" placeholder="First Name" onChange={handleChange} value={formData.firstName}></input>
+            <input type="text" name="lastName" placeholder="Last Name" onChange={handleChange} value={formData.lastName}></input>
+            <input type="email" name="email" placeholder="Email" onChange={handleChange} value={formData.email}></input>
             <p>{formData.firstName} {formData.lastName} {formData.email}</p>
         </form>
     );
