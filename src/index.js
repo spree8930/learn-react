@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import './index.scss'
+import Form from './Form'
 
 const App = () => {
     return (
-        <div>
-            Hello World
-       </div>
+        <Form />
     )
 }
 
